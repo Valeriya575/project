@@ -1,0 +1,58 @@
+ 
+LINIJA 2 
+Betnavska-Razvanje  
+059 180 482 
+www.marprom.si 
+D E L A V N I K 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Razvanje 
+05:05  05:40  06:00  06:40  07:20  08:00  08:40  09:00  09:20  10:00  10:40  11:20  12:00  12:40  13:00  13:40  14:20  14:40  
+15:20  16:00  16:40  17:20  18:00  18:40  19:20  20:00  21:35  22:30 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Kardeljeva - Borštnikova 
+05:05  05:20  05:40  06:00  06:20  06:40  07:00  07:20  07:40  08:00  08:20  08:40  09:00  09:20  09:40  10:00  10:20  10:40  
+11:00  11:20  11:40  12:00  12:20  12:40  13:00  13:20  13:40  14:00  14:20  14:40  15:00  15:20  15:40  16:00  16:20  16:40  
+17:00  17:20  17:40  18:00  18:20  18:40  19:00  19:20  19:40  20:00  20:30  21:10  21:35  22:10  22:30 
+ OPOMBA: OB  05:35  14:15  22:05 OD Melje VOZI AVTOBUS V Maribor AP. 
+ ODHODI IZ POSTAJE Razvanje ZA SMER Maribor AP 
+05:25  06:05  06:25  07:05  07:45  08:25  09:05  09:25  09:45  10:25  11:05  11:45  12:25  13:05  13:25  14:10  14:45  15:05  
+15:45  16:25  17:05  17:45  18:25  19:05  19:45  20:25  22:05 
+ OPOMBA: OB  05:05 OD Razvanje VOZI AVTOBUS V Melje. 
+ ODHODI IZ POSTAJE Kardeljeva - Borštnikova ZA SMER Maribor AP 
+04:45  05:31  05:50  06:11  06:31  06:50  07:05  07:11  07:30  07:51  08:10  08:31  08:50  09:11  09:31  09:51  10:10  10:31  
+10:50  11:11  11:30  11:51  12:10  12:31  12:50  13:11  13:31  14:16  14:30  14:51  15:11  15:30  15:51  16:10  16:31  16:50  
+17:11  17:30  17:51  18:10  18:31  18:50  19:11  19:30  19:51  20:10  20:31  20:50  22:11  22:30 
+ OPOMBA: OB  05:11  13:50  21:35 OD Kardeljeva - Borštnikova VOZI AVTOBUS V Melje. 
+ S O B O T A 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Kardeljeva - Borštnikova 
+05:35  06:05  06:35  07:05  07:35  08:05  08:35  09:05  09:35  10:05  10:35  11:05  11:35  12:05  12:35  13:05  13:35  14:05  
+14:35  15:05  16:05  17:05  18:05  19:05  20:05  21:05  22:05  22:40 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Razvanje 
+06:05  07:05  08:05  09:05  11:05  12:05  13:05  14:05  15:05  16:05  17:05  18:05  19:05  21:05  22:40 
+ ODHODI IZ POSTAJE Razvanje ZA SMER Maribor AP 
+05:10  06:30  07:30  08:30  09:30  11:30  12:30  13:30  14:30  15:30  16:30  17:30  18:30  19:30  21:30 
+ ODHODI IZ POSTAJE Kardeljeva - Borštnikova ZA SMER Maribor AP 
+05:16  05:35  06:10  06:36  07:10  07:36  08:10  08:36  09:10  09:36  10:10  10:40  11:10  11:36  12:10  12:36  13:10  13:36  
+14:10  14:36  15:10  15:36  16:36  17:36  18:36  19:36  20:40  21:36  22:20 
+ N E D E L J A 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Kardeljeva - Borštnikova 
+06:50  07:50  08:50  09:50  10:50  11:50  12:20  13:20  14:20  15:50  16:50  17:50  18:50  19:50  20:50  21:50  22:25 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Razvanje 
+06:50  08:50  09:50  11:50  13:20  15:50  16:50  18:50  20:50  22:25 
+ ODHODI IZ POSTAJE Razvanje ZA SMER Maribor AP 
+06:15  07:15  09:15  10:15  12:15  13:45  16:15  17:15  19:15  21:15 
+ ODHODI IZ POSTAJE Kardeljeva - Borštnikova ZA SMER Maribor AP 
+06:21  07:21  08:20  09:21  10:21  11:20  12:21  12:50  13:51  14:50  16:21  17:21  18:20  19:21  20:20  21:21  22:05 
+ Legenda : 
+  Vozila prilagojena potrebam gibalno oviranih oseb.  
+ Adapting vehicles for people with disabilities. 
+ 
+LINIJA ŠT.2: Betnavska-Razvanje 
+Melje, Kraljeviča Marka ulica, Oreško nabrežje 1, Oreško nabrežje 2, Maribor AP, TPC City , Glavni trg - Vetrinjska, Tabor, 
+Gorkega, Betnavska - Focheva, Betnavska - Metelkova, Betnavska - Goriška, Betnavska - Knafelčeva, Kardeljeva - Knafelčeva, 
+OŠ Tabor 1, Kardeljeva - Borštnikova, Betnavski grad, Razvanje - vrtnarstvo, Razvanje - GD, Razvanje 
+POVRATEK 
+Razvanje, Razvanje - GD, Razvanje - vrtnarstvo, Betnavski grad, Kardeljeva - Borštnikova, OŠ Tabor 1, Kardeljeva - Knafelčeva, 
+Betnavska - Knafelčeva, Betnavska - Goriška, Betnavska - Metelkova, Betnavska - Focheva, Gorkega - Preradovičeva, Maribor - 
+UKC, Glavni trg - Židovska, TPC City , Maribor AP, Meljska - Partizanska, Meljska - trgovina, Melje 
+ 
+Vozni red velja od 03. 09. 2018. 
+----------------Page (0) Break----------------

@@ -1,0 +1,57 @@
+ 
+LINIJA 15 
+Bresternica  
+059 180 482 
+www.marprom.si 
+D E L A V N I K 
+ODHODI IZ POSTAJE Bresternica ZA SMER Košaški dol / ŽP Maribor 
+05:10  05:45  06:10  06:50  07:25  08:05  08:40  09:20  09:55  10:35  11:10  11:50  12:25  13:05  13:40  14:20  
+14:55  15:35  16:10  16:50  17:25  18:05  18:40  19:20  19:55  20:35  21:10  21:50 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Košaški dol 
+05:10  05:30  05:30  06:10  06:40  07:20  07:55  08:35  09:10  09:50  10:25  11:05  11:40  12:20  12:55  13:35  
+14:15  14:50  15:25  16:05  16:40  17:20  17:55  18:35  18:35  19:10  19:50  20:25  21:05  21:40  22:15 
+ ODHODI IZ POSTAJE Košaški dol ZA SMER Bresternica 
+05:15  05:35  06:15  06:45  07:25  08:00  08:40  09:15  09:55  10:30  11:10  11:45  12:25  13:00  13:40  14:20  
+14:55  15:30  16:10  16:45  17:25  18:00  18:40  19:15  19:55  20:30  21:10  22:20 
+ ODHODI IZ POSTAJE Košaški dol ZA SMER ŽP Maribor  
+05:15  05:35  06:15  06:45  07:25  08:00  08:40  09:15  09:55  10:30  11:10  11:45  12:25  13:00  13:40  14:20  
+14:55  15:30  16:10  16:45  17:25  18:00  18:40  19:15  19:55  20:30  21:10  21:45  22:20 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Bresternica / TPC City 
+05:25  05:45  06:25  06:55  07:35  08:10  08:50  09:25  10:05  10:40  11:20  11:55  12:35  13:10  13:50  14:30  
+15:05  15:40  16:20  16:55  17:35  18:10  18:50  19:25  20:05  20:40  21:20  22:30 
+ S O B O T A 
+ODHODI IZ POSTAJE Bresternica ZA SMER Košaški dol 
+05:10  06:10  07:25  08:40  09:55  11:10  12:25  13:40  14:55  16:05  17:15  18:25  19:35  20:45  21:55 
+ ODHODI IZ POSTAJE Bresternica ZA SMER ŽP Maribor  
+05:10  06:10  07:25  08:40  09:55  11:10  12:25  13:40  14:55  16:05  17:15  18:25  19:35  20:45  21:55  22:50 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Košaški dol 
+05:30  06:40  07:55  09:10  10:25  11:40  12:55  14:10  15:20  16:30  17:40  18:50  20:00  21:10  22:15 
+ ODHODI IZ POSTAJE Košaški dol ZA SMER Bresternica / ŽP Maribor 
+05:35  06:45  08:00  09:15  10:30  11:45  13:00  14:15  15:25  16:35  17:45  18:55  20:05  21:15  22:20 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Bresternica 
+05:45  06:55  08:10  09:25  10:40  11:55  13:10  14:25  15:35  16:45  17:55  19:05  20:15  21:25  22:30 
+ N E D E L J A 
+ODHODI IZ POSTAJE Bresternica ZA SMER Košaški dol 
+06:10  07:25  08:40  09:55  11:10  12:25  13:40  14:55  15:55  17:00  18:05  19:05  20:35 
+ ODHODI IZ POSTAJE Bresternica ZA SMER ŽP Maribor  
+06:10  07:25  08:40  09:55  11:10  12:25  13:40  14:55  15:55  17:00  18:05  19:05  20:35  21:55 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Košaški dol 
+05:30  06:40  07:55  09:10  10:25  11:40  12:55  14:10  15:15  16:20  17:25  18:30  19:50  21:10 
+ ODHODI IZ POSTAJE Košaški dol ZA SMER Bresternica / ŽP Maribor 
+05:35  06:45  08:00  09:15  10:30  11:45  13:00  14:15  15:20  16:25  17:30  18:35  19:55  21:15 
+ ODHODI IZ POSTAJE ŽP Maribor  ZA SMER Bresternica 
+05:45  06:55  08:10  09:25  10:40  11:55  13:10  14:25  15:30  16:35  17:40  18:45  20:05  21:25 
+ Legenda : 
+  Vozila prilagojena potrebam gibalno oviranih oseb.  
+ Adapting vehicles for people with disabilities. 
+ LINIJA ŠT.15: Bresternica 
+Bresternica, Bresternica - rondo, Bresternica - odcep, Čolnarna , Mariborski otok - HE, Kamnica - križišče, Terme Fontana, Gosposvetska - 
+rondo, Koroška vrata, Koroška - trgovina, Koroška - FERI, Koroška - tržnica, Koroška - Poštna, Glavni trg - Židovska, TPC City , ŽP Maribor , 
+Šentiljska - Medved, Šubičeva - vrtec, Nadvoz, Koš. dol - Pod vinogradi, Košaški dol - V zavoju, Košaški dol 
+POVRATEK 
+Košaški dol, Košaki - stiskalnica, Na prehodu, Šentiljska - veterinar, Šentiljska - Počehovska, Šentiljska - TMI Košaki, Šentiljska - Medved, ŽP 
+Maribor , TPC City , Glavni trg - Vetrinjska, Koroška - Poštna, Smetanova - Teh. fakul., Koroška - trgovina, Koroška vrata, Gosposvetska - rondo, 
+Terme Fontana, Kamnica - križišče, Mariborski otok - HE, Čolnarna , Bresternica - odcep, Bresternica - rondo, Bresternica 
+ 
+Vozni red velja od 03. 09. 2018. 
+----------------Page (0) Break----------------

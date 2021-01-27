@@ -1,0 +1,97 @@
+<div class="planner-content">
+  <h3>Get information when a bus arrives onto a station</h3>
+  <div class="form-frame">
+    <div class="form-row">
+      <div class="col">
+        <div class="form-group">
+          <label for="selectStation">Select Station</label>
+          <select class="form-control" id="selectStation" name="selectStation" [(ngModel)]="selectedStation">
+            <option *ngFor="let sl of stationList" [ngValue]="sl">{{sl.stationName}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="selectBus">Select Bus</label>
+          <select class="form-control" id="selectBus" name="selectBus" [(ngModel)]="selectedBus">
+            <option *ngFor="let b of busList" [ngValue]="b">{{b.busDirection}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <button (click)="getLines()" class="conf-btn btn btn-info">Search for bus</button>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col">
+        <div *ngIf="authService.token" role="group" aria-label="Favourite Stations">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-info">Favourite Stations</li>
+            <li *ngFor="let station of user.favouriteStations" (click)="selectStation(station.id)" class="list-group-item">{{station.name}}</li>
+          </ul>
+          <!--<button *ngFor="let station of user.favouriteStations" (click)="selectStation(station.id)" type="button" class="btn btn-info btn-group-sm">{{station.name}}</button>-->
+        </div>
+      </div>
+      <div class="col">
+        <div *ngIf="authService.token" role="group" aria-label="Favourite Buses">
+          <!--<button *ngFor="let bus of user.favouriteBuses" (click)="selectBus(bus.id)" type="button" class="btn btn-info btn-group-sm">{{bus.name}}</button>-->
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-info">Favourite Buses</li>
+            <li *ngFor="let bus of user.favouriteBuses" (click)="selectBus(bus.id)" class="list-group-item">{{bus.name}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="lines && lines.length > 0" class="result-container">
+    <div class="filter-container">
+      <h5>Filter results</h5>
+      <div class="form-group">
+        <label for="dayType">Day Type</label>
+        <select class="form-control" id="dayType" name="selectDayType" [(ngModel)]="selectedDayType">
+          <option *ngFor="let dt of dayTypeList" [ngValue]="dt">{{dt}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <div class="date-picker">
+          <dl-date-time-picker startView="hour" maxView="hour" minView="minute" minuteStep="1" [(ngModel)]="selectedDate">
+          </dl-date-time-picker>
+        </div>
+      </div>
+      <button (click)="filterResults()" class="btn btn-info btn-block">Filter</button>
+    </div>
+    <table class="table table-striped" *ngIf="lines">
+      <thead>
+        <tr>
+          <th scope="col">Bus direction</th>
+          <th scope="col">Station name</th>
+          <th scope="col">Arrival times</th>
+          <th scope="col">Day type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let line of lines">
+          <td class="clickable-td" (click)="gotoBusDetails(line.bus.id)">{{ line.bus.busDirection }}</td>
+          <td class="clickable-td" (click)="gotoStationDetails(line.station.id)">{{ line.station.stationName }}</td>
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Show arrival times
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p *ngFor="let at of line.arrivalTimes" class="dropdown-item">{{ at | date:'mediumTime' }}</p>
+                <p *ngIf="line.arrivalTimes.length === 0" class="dropdown-item">No lines to show</p>
+              </div>
+            </div>
+          </td>
+          <td>{{ line.dayType }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="lines && lines.length === 0" class="no-match-container">
+    <h1>Sorry, no matches!</h1>
+  </div>
+</div>

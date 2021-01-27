@@ -1,0 +1,21 @@
+/*.navigation-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navigation-bar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #336699;    
+}
+.navigation-bar-h {
+    font-weight: bold;
+    font-size: 25px;
+    color: #dddddd;
+}
+.navigation-bar-n {
+    color: #dddddd;
+} */

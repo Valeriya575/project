@@ -1,0 +1,22 @@
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-frame {
+    border: 1.3px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 700px;
+    padding-right: 70px;
+    padding-left: 30px;    
+}
+
+table {
+    margin: 20px;
+}

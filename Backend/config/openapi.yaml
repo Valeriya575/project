@@ -1,0 +1,542 @@
+openapi: 3.0.0
+info:
+  description: A simple NodeJS backend for the BusLines app.
+  version: 1.0.0
+  title: Buslines API
+  contact:
+    email: david.rubin@student.um.si
+  license:
+    name: MIT
+    url: 'https://github.com/lovros/RUPS/blob/master/Backend/LICENSE.md'
+servers:
+  - url: 'http://localhost:3000/api/v1'
+    description: Old HTTP server
+  - url: 'https://localhost:3000/api/v1'
+    description: New HTTP/2 server with SSL
+tags:
+  - name: stations
+    description: The endpoint for LPP stations
+  - name: buses
+    description: Get information about LPP buses
+  - name: schedule
+    description: Access data about bus arrivals on stations
+  - name: users
+    description: Manipulate user data
+paths:
+  /users:
+    post:
+      tags:
+        - users
+      summary: Register a new user
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - username
+                - email
+                - password
+              properties:
+                username:
+                  type: string
+                  description: 'Username of a user'
+                  example: 'anika8'
+                password:
+                  type: string
+                  description: 'Password of a user'     
+                  example: 'Moist3Chimps'      
+                email:
+                  type: string
+                  format: email
+                  description: 'Users email'
+                  example: 'ana.novak@example.com'
+      responses:
+        '204':
+          description: OK
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /users/me:
+    get:
+      tags: 
+        - users
+      summary: Get details about yourself
+      security:
+        - jwtAuth: []
+      operationId: whoAmI
+      responses:
+        '200':
+          description: Details (without password!)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /users/me/:
+    patch:
+      tags:
+        - users
+      summary: Update a user
+      security:
+        - jwtAuth: []
+      operationId: updateUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                password:
+                  type: String
+                  description: New password
+                  example: 'UmazanaCunkica?'
+                email:
+                  type: String
+                  format: email
+                  description: New email
+                  example: anika.novak@example.com
+                favouriteStations:
+                  type: array
+                  items:
+                    type: object
+                    description: Favourite stations with custom names
+                    properties:
+                      name:
+                        type: string
+                        description: Custom station name
+                        example: 'Študenti Rožna'
+                      id:
+                        type: number
+                        description: LPP ID of the station
+                        example: 702022
+                favouriteBuses:
+                  type: array
+                  items:
+                    type: object
+                    description: Favourite buses with custom names
+                    properties:
+                      name:
+                        type: string
+                        description: Custom bus name
+                        example: '14ka'
+                      id:
+                        type: string
+                        description: LPP ID of the bus
+                        example: 14_B
+                        
+      responses:
+        '204':
+          description: OK
+        '400':
+          description: Invalid parameters
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /users/me/favourite/stations/{stationId}:
+    delete:
+      tags:
+        - users
+      summary: Remove a favourite station
+      security:
+        - jwtAuth: []
+      operationId: deleteFavouriteLppStation
+      parameters:
+        - name: stationId
+          in: path
+          description: ID of the station
+          required: true
+          schema:
+            type: number
+          example: 702022
+      responses:
+        '204':
+          description: OK
+        '400':
+          description: Invalid station ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /users/me/favourite/buses/{busId}:
+    delete:
+      tags:
+        - users
+      summary: Remove a favourite bus
+      security:
+        - jwtAuth: []
+      operationId: deleteFavouriteLppBus
+      parameters:
+        - name: busId
+          in: path
+          description: ID of the bus
+          required: true
+          schema:
+            type: string
+          example: 14_B
+      responses:
+        '204':
+          description: OK
+        '400':
+          description: Invalid bus ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /auth:
+    post:
+      tags:
+        - users
+      summary: Authenticate a user
+      operationId: loginUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: anika8
+                password:
+                  type: string
+                  example: Moist3Chimps
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                token:
+                  type: string
+                  description: JWT token
+                  example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoiYW5pa2EiLCJleHAiOjE1MTYyMzk5MjIsImlhdCI6MTUxNjIzOTAyMn0.db7H_77BQ4Dnw93AZzJIQgi7EGAe8nnEVTrNC33Mb7o"
+        '403':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /lj/stations:
+    get:
+      tags:
+        - stations
+      summary: Get a list of all stations
+      operationId: allStations
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+             
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LPPStation'
+  /lj/stations/{stationId}:
+    get:
+      tags:
+        - stations
+      summary: Get details about a certain station
+      operationId: getStation
+      parameters:
+        - name: stationId
+          in: path
+          description: ID of station to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LPPStation'
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+  /lj/buses:
+    get:
+      tags:
+        - buses
+      summary: Get all the buses in the database
+      description: ''
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LPPBus'
+  /lj/buses/{busId}:
+    get:
+      tags:
+        - buses
+      summary: Get details of bus with the given ID
+      parameters:
+        - name: busId
+          in: path
+          description: ID of the bus (line)
+          required: true
+          schema:
+            type: string
+      description: ''
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LPPBus'
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /lj/schedule:
+    get:
+      tags:
+        - schedule
+      summary: Get information when a bus arrives onto a station
+      parameters:
+        - name: s
+          in: query
+          description: ID of the station
+          required: true
+          schema:
+            type: string
+        - name: b
+          in: query
+          description: ID of the bus
+          required: true
+          schema:
+            type: string
+      description: ''
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LPPArrival'
+        '400':
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+components:
+  securitySchemes:
+    jwtAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    LPPArrival:
+      allOf:
+        - $ref: '#/components/schemas/LPPArrival'
+        - required:
+            - id
+            - bus
+            - station
+            - arrivalTimes
+            - dayType
+          properties:
+            id:
+              type: string
+              example: '5beb2d1dfba5f005e82aa4ea'
+              description: 'Default mongo ID'
+            bus:
+              type: string
+              example:
+                id: '01_V'
+                busLine: '01'
+                busDirection: 'Vižmarje'
+              description: 'The whole bus object'
+            station:
+              type: integer
+              format: int64
+              example:
+                id: 803014
+                stationName: 'Remiza'
+                location:  { "lon": 14.5047956, "lat": 46.0551294 }
+              description: 'The whole station object'
+            arrivalTimes:
+              type: array
+              items:
+                type: string
+                format: date-time
+              example: [ "0001-01-01T01:55:00.000Z",
+                "0001-01-01T02:35:00.000Z",
+                "0001-01-01T03:10:00.000Z",]
+              description: 'Array of arrival times (ignore date)'
+            dayType:
+              type: string
+              example: 'Delavnik'
+              description: 'Type of day (work, saturday or sunday & holidays)'
+    LPPStation:
+      allOf:
+        - $ref: '#/components/schemas/LPPStation'
+        - required:
+            - id
+            - stationName
+            - location
+          properties:
+            id:
+              type: integer
+              format: int64
+              example: 600012
+              description: 'Station ID taken from LPP'
+            stationName:
+              type: string
+              example: 'Kozolec'
+              description: 'Common name of the station'
+            location:
+              type: object
+              properties:
+                lon: 
+                  type: number
+                  format: float
+                  description: Longitude
+                lat:
+                  type: number
+                  format: float
+                  description: Latitude
+              example: { "lon": 14.5047956, "lat": 46.0551294 }
+              description: 'Location provided with lon lat'
+    LPPBus:
+      allOf:
+        - $ref: '#/components/schemas/LPPBus'
+        - required:
+            - id
+            - busDirection
+            - busLine
+        - properties:
+            id:
+              type: string
+              example: '01_V'
+              description: 'Bus line + first letter of direction'
+            busLine:
+              type: string
+              example: '01'
+              description: 'The common name for the bus line'
+            busDirection:
+              type: string
+              example: 'Vižmarje'
+              description: 'Last station on the route'
+    ErrorResponse:
+      allOf:
+        - $ref: '#/components/schemas/ErrorResponse'
+        - properties:
+            error:
+              type: string
+              description: 'Error message'
+              example: 'Problem with field X'
+            description:
+              type: string
+              description: 'Error details'
+              example: 'Field X should look like ...'
+            stack:
+              type: string
+              description: Stack trace (only when using development env)
+    User:
+      allOf:
+        - $ref: '#/components/schemas/User'
+        - required:
+            - username
+            - email
+            - password
+        - properties:
+            id:
+              type: string
+              description: Some UUID id for a user
+            username:
+              type: string
+              description: 'Username of a user'
+              example: 'anika8'
+            password:
+              type: string
+              description: 'Password of a user'     
+              example: 'Moist3Chimps'      
+            email:
+              type: string
+              format: email
+              description: 'Users email'
+              example: 'ana.novak@example.com'
+            favouriteStations:
+              type: array
+              items:
+                type: object
+                description: 'LPP Bus stations with custom names'
+                properties:
+                  name:
+                    type: string
+                    description: Custom station name
+                    example: Studenti rozna
+                  id:
+                    type: number
+                    description: LPP bus station ID
+                    example: 702021
+            favouriteBuses:
+              type: array
+              items:
+                type: object
+                description: Favourite buses with custom names
+                properties:
+                  name:
+                    type: string
+                    description: Custom bus name
+                    example: '14ka'
+                  id:
+                    type: string
+                    description: LPP ID of the bus
+                    example: 14_B

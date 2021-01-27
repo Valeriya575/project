@@ -1,0 +1,74 @@
+#!/usr/bin/env node
+
+const chalk = require('chalk');
+const spdy = require('spdy');
+const fs = require('fs');
+const app = require('../index');
+
+// Normalizes a port into an integer, string or boolean
+function normalizePort(value) {
+    const p = parseInt(value, 10);
+    if (Number.isNaN(p)) {
+        // Named pipe
+        return value;
+    }
+    if (p >= 0) {
+        // Port number
+        return p;
+    }
+    return false;
+}
+
+// Spdy server options
+const options = {
+    key: fs.readFileSync(`${__dirname}/../certs/localhost.key`),
+    cert: fs.readFileSync(`${__dirname}/../certs/localhost.cert`),
+
+    // Create a plain HTTP server (next gen will be HTTP/2)
+    spdy: {
+        plain: true, // Use without SSL
+        ssl: false, // Use without SSL
+    },
+};
+
+const port = normalizePort(process.env.PORT || '3000');
+const server = spdy.createServer(options, app);
+
+// Event listener for a HTTP server error.
+function onError(error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
+
+    const bind = typeof port === 'string'
+        ? `Pipe ${port}`
+        : `Port ${port}`;
+    // Handle specific listen error with friendly messages
+    switch (error.code) {
+    case 'EACCESS':
+        console.error(chalk.red(`${bind} requires elevated privileges`));
+        process.exit(1);
+        break;
+    case 'EADDRINUSE':
+        console.error(chalk.red(`${bind} is already in use`));
+        process.exit(1);
+        break;
+    default:
+        throw error;
+    }
+}
+
+// Event listener for HTTP server listening event.
+function onListening() {
+    const addr = server.address();
+    const bind = typeof addr === 'string'
+        ? `${addr}`
+        : `localhost:${addr.port}`;
+    console.log('Server listening on', chalk.blue(`http://${bind}`));
+}
+
+app.set('port', port);
+// HTTP/2 server
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);

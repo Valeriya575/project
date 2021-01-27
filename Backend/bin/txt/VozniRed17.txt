@@ -1,0 +1,49 @@
+ 
+LINIJA 10 
+Malečnik  
+059 180 482 
+www.marprom.si 
+ 
+D E L A V N I K 
+ODHODI IZ POSTAJE Melje ZA SMER Metava 
+06:10  07:10  08:10  13:10  14:10  15:10  16:10 
+ 
+ODHODI IZ POSTAJE Melje ZA SMER Malečnik - trgovina 
+06:10  07:10  08:10  13:10  14:10  15:10  16:10 
+ 
+ODHODI IZ POSTAJE Melje ZA SMER Trčova - Griček 
+06:10  07:10  08:10  13:10  14:10  15:10  16:10 
+ 
+ODHODI IZ POSTAJE Mlinska AP ZA SMER Metava 
+06:05  07:05  08:05  13:05  14:05  15:05  16:05 
+ 
+ODHODI IZ POSTAJE Mlinska AP ZA SMER Malečnik - trgovina 
+06:05  07:05  08:05  13:05  14:05  15:05  16:05 
+ 
+ODHODI IZ POSTAJE Mlinska AP ZA SMER Trčova - Griček 
+06:05  07:05  08:05  13:05  14:05  15:05  16:05 
+ 
+ODHODI IZ POSTAJE Metava ZA SMER Mlinska AP 
+05:35  06:25  07:25  08:35  13:35  14:35  15:35  16:35 
+ 
+ODHODI IZ POSTAJE Malečnik - trgovina ZA SMER Mlinska AP 
+05:40  06:30  07:30  08:40  13:40  14:40  15:40  16:40 
+ 
+ODHODI IZ POSTAJE Trčova - Griček ZA SMER Mlinska AP 
+05:38  06:28  07:28  08:38  13:38  14:38  15:38  16:38 
+ 
+OPOMBA: OB SOBOTAH IN NEDELJAH PROGA ŠT. 10 NE OBRATUJE. 
+ 
+LINIJA ŠT.10: Malečnik 
+Mlinska AP, Oreško nabrežje 2, Oreško nabrežje 1, Kraljeviča Marka ulica, Melje, Meljski hrib - most, Kovačič, Lorber, Malečnik - 
+odcep Trčova, Malečnik - trgovina, Trčova 31, Trčova - Griček, Novak, Metava - Duplek, križišče, Metava 
+POVRATEK 
+Metava, Metava - Duplek, križišče, Novak, Trčova - Griček, Trčova 31, Malečnik - trgovina, Malečnik - odcep Trčova, Lorber, 
+Kovačič, Meljski hrib - most, Čufarjeva - dom st. obč., Čufarjeva - TVD Partizan, Greenwich, Pobreška - Europark, Magdalena, 
+Glavni trg - Židovska, TPC City , Mlinska AP 
+ 
+Vozni red velja od 03. 09. 2018. 
+ 
+ 
+ 
+----------------Page (0) Break----------------

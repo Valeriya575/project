@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle left>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: #e2e2e2;">
+    <ion-list style="background-color: #e2e2e2;">
+        <ion-item *ngIf="user.username" style="background-color: #e2e2e2;">
+            Username: {{user.username}}
+        </ion-item>
+      
+        <ion-item style="background-color: #e2e2e2;">
+          <ion-label for="email" floating>
+              New E-Mail Address
+          </ion-label>
+          <ion-input  type="email" id="email" [(ngModel)]="user.email" ></ion-input>
+        </ion-item>
+        <ion-item style="background-color: #e2e2e2;">
+            <ion-label for="password" floating>
+                New Password
+            </ion-label>
+            <ion-input  type="password" id="password" [(ngModel)]="user.password" ></ion-input>
+        </ion-item>
+
+      
+        <ion-item style="background-color: #e2e2e2;">
+          <ion-header style="background-color: #e2e2e2;">
+              Favourite Stations
+          </ion-header>
+          <ion-label for="selectStation" style="background-color: #e2e2e2;">Add favourite station</ion-label>
+          <ion-select style="background-color: #e2e2e2;" id="selectStation" name="selectStation" [(ngModel)]="selectedStation">
+              <ion-option *ngFor="let sl of stationList" [value]="sl">{{ sl.stationName }}</ion-option>
+          </ion-select>
+        </ion-item>
+      
+        <ion-list style="background-color: #e2e2e2;">
+            <ion-list-header style="background-color: #e2e2e2;">
+              <ion-label>Station name</ion-label>
+              <ion-label>Action</ion-label>
+            </ion-list-header>
+      
+            <ion-item style="background-color: #e2e2e2;" *ngFor="let station of user.favouriteStations">
+              <ion-label (click)="deleteStation(station.id)">{{station.name}}</ion-label>
+            </ion-item> 
+        </ion-list>
+      
+        <ion-item style="background-color: #e2e2e2;">
+            <ion-header style="background-color: #e2e2e2;">
+                Favourite Buses
+            </ion-header>
+            <ion-label style="background-color: #e2e2e2;" for="selectBus">Add favourite bus</ion-label>
+            <ion-select style="background-color: #e2e2e2;" id="selectBus" name="selectBus" [(ngModel)]="selectedBus">
+                <ion-option *ngFor="let b of busList" [value]="b">{{ b.busDirection }}</ion-option>
+            </ion-select>
+          </ion-item>
+        
+          <ion-list style="background-color: #e2e2e2;">
+              <ion-list-header style="background-color: #e2e2e2;">
+                <ion-label>Bus name</ion-label>
+                <ion-label>Action</ion-label>
+              </ion-list-header>
+        
+              <ion-item style="background-color: #e2e2e2;" *ngFor="let bus of user.favouriteBuses">
+                <ion-label (click)="deleteBus(bus.id)">{{bus.name}}</ion-label>
+              </ion-item> 
+          </ion-list>
+      
+          <button ion-button color = "default" (click)="saveChanges()" full outline> Submit Changes </button>
+      
+      </ion-list>
+      
+</ion-content>

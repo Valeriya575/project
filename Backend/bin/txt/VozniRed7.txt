@@ -1,0 +1,63 @@
+ 
+LINIJA 1 
+Tezno  
+059 180 482 
+www.marprom.si 
+ 
+D E L A V N I K 
+ 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Tezenska Dobrava 
+05:00  05:20  05:45  06:00  06:15  06:25  06:35  06:45  07:00  07:15  07:25  07:35  07:45  08:00  08:15  08:25  
+08:35  08:45  09:00  09:20  09:40  10:00  10:20  10:40  11:00  11:20  11:40  12:00  12:15  12:25  12:35  12:45  
+13:00  13:15  13:25  13:35  13:45  14:00  14:15  14:25  14:35  14:45  15:00  15:15  15:25  15:35  15:45  16:00  
+16:15  16:25  16:35  16:45  17:00  17:20  17:40  18:00  18:20  18:40  19:00  19:20  19:40  20:00  20:20  20:40  
+21:00  21:20  21:40  22:15  22:30  22:50 
+ 
+OPOMBA: OB  05:40  14:10  22:10 OD Melje VOZI AVTOBUS V Maribor AP. 
+ 
+ 
+ODHODI IZ POSTAJE Tezenska Dobrava ZA SMER Maribor AP 
+04:30  04:50  05:10  05:30  05:50  06:05  06:15  06:30  06:45  06:55  07:05  07:15  07:30  07:45  07:55  08:05  
+08:15  08:30  08:45  08:55  09:05  09:15  09:30  09:50  10:10  10:30  10:50  11:10  11:30  11:50  12:10  12:30  
+12:45  12:55  13:05  13:15  13:30  13:45  13:55  14:05  14:15  14:30  14:45  14:55  15:05  15:15  15:30  15:45  
+15:55  16:05  16:15  16:30  16:45  16:55  17:05  17:15  17:30  17:50  18:10  18:30  18:50  19:10  19:30  19:50  
+20:10  20:30  20:50  21:10  21:30  21:50  22:10  22:30  22:50 
+ 
+OPOMBA: OB  05:10  13:15  21:30 OD Tezenska Dobrava VOZI AVTOBUS V Melje. 
+ 
+S O B O T A 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Tezenska Dobrava 
+05:00  06:00  06:30  07:00  07:30  08:00  08:30  09:00  09:30  10:00  10:30  11:00  11:30  12:00  12:30  13:00  
+13:30  14:00  14:30  15:00  16:00  17:00  18:00  19:00  20:00  21:00  22:10 
+ 
+ODHODI IZ POSTAJE Tezenska Dobrava ZA SMER Maribor AP 
+05:25  05:55  06:25  06:55  07:25  07:55  08:25  08:55  09:25  09:55  10:25  10:55  11:25  11:55  12:25  12:55  
+13:25  13:55  14:25  14:55  15:25  16:25  17:25  18:25  19:25  20:25  21:25  22:30 
+ 
+N E D E L J A in P R A Z N I K 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Tezenska Dobrava 
+06:00  06:30  07:00  07:30  08:00  08:30  09:00  09:30  10:00  10:30  11:00  11:30  12:00  12:30  13:00  14:00  
+15:00  16:00  17:00  18:00  19:00  20:00  21:00  22:10 
+ 
+ODHODI IZ POSTAJE Tezenska Dobrava ZA SMER Maribor AP 
+05:25  05:55  06:25  06:55  07:25  07:55  08:25  08:55  09:25  09:55  10:25  10:55  11:25  11:55  12:25  12:55  
+13:25  14:25  15:25  16:25  17:25  18:25  19:25  20:25  21:25  22:35 
+ 
+Legenda : 
+  Vozila so prilagojena potrebam gibalno oviranih oseb.  
+ Adapting vehicles for people with disabilities. 
+ 
+LINIJA ŠT.1: Tezno 
+Melje, Kraljeviča Marka ulica, Oreško nabrežje 1, Oreško nabrežje 2, Maribor AP, TPC City , Glavni trg - Vetrinjska, Maribor - 
+UKC, Magdalena, Titova - Nasipna, Ptujska - Tržaška, Ptujska - hitra cesta, Ptujska - Kovinar, Ptujska - Autocommerce, Ptujska - 
+pošta, Ptujska - TAM, Dogoška - vrtec, KS Silvire Tomassini, Tezenska Dobrava 
+POVRATEK 
+Tezenska Dobrava, KS Silvire Tomassini, Dogoška - vrtec, Ptujska - TAM, Ptujska - pošta, Ptujska - Autocommerce, Ptujska - 
+Kovinar, Ptujska - hitra cesta, Tržaška - Ptujska, Titova - Nasipna, Magdalena, Glavni trg - Židovska, TPC City , Maribor AP, 
+Oreško nabrežje 2, Oreško nabrežje 1, Kraljeviča Marka ulica, Melje 
+ 
+Vozni red velja od 03. 09. 2018. 
+ 
+ 
+ 
+----------------Page (0) Break----------------

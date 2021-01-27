@@ -1,0 +1,23 @@
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.login-title {
+    margin-top: 250px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.form-frame {
+    border: 1.3px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 20px;
+    width: 320px;    
+}

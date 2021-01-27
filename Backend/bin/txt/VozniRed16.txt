@@ -1,0 +1,60 @@
+ 
+LINIJA 20 
+Grušova  
+059 180 482 
+www.marprom.si 
+ D E L A V N I K 
+ODHODI IZ POSTAJE Melje ZA SMER Grušova 
+05:20  06:19  07:14  08:14  09:14  10:14  11:14  12:14  13:20  14:14  15:20  16:14  17:14  18:14  19:14  21:26  
+22:15 
+ ODHODI IZ POSTAJE Mlinska AP ZA SMER Grušova 
+05:25  06:25  07:20  08:20  09:20  10:20  11:20  12:20  13:25  14:20  15:30  16:20  17:20  18:20  20:20  22:20 
+ ODHODI IZ POSTAJE Mlinska AP ZA SMER Trčova - Griček 
+06:25  09:20  10:20  11:20  12:20  17:20  18:20  20:20  22:20 
+ ODHODI IZ POSTAJE Melje ZA SMER Metava 
+22:15 
+ ODHODI IZ POSTAJE Grušova ZA SMER Melje 
+05:00  06:05  07:00  08:00  09:00  10:00  11:00  12:00  13:00  14:00  15:00  16:00  17:00  18:00  19:00  21:00 
+ ODHODI IZ POSTAJE Trčova - Griček ZA SMER Melje 
+05:13  6:48  9:43  10:43  11:43  13:13  15:13  17:43  18:43  21:13   
+Opomba: ___ vozi do Grušove in obrne proti Melju 
+ ODHODI IZ POSTAJE Metava ZA SMER Melje 
+21:13 
+ S O B O T A 
+ODHODI IZ POSTAJE Melje ZA SMER Grušova 
+05:25  06:40  08:30  10:40  12:15  14:20  15:40  19:30  22:20 
+ ODHODI IZ POSTAJE Melje ZA SMER Trčova - Griček 
+06:40  08:30  10:40  12:15  14:20  15:40  19:30  22:20 
+ ODHODI IZ POSTAJE Melje ZA SMER Metava 
+06:40  15:40  19:30 
+Opomba: ___ vozi do Grušove in obrne proti Trčova - Griček 
+ ODHODI IZ POSTAJE Grušova ZA SMER Melje 
+04:45  06:00  07:15  09:15  11:30  13:05  15:05  18:50  20:50 
+ ODHODI IZ POSTAJE Trčova - Griček ZA SMER Melje 
+04:59  06:13  07:35  09:29  11:44  14:47  19:03  21:04 
+Opomba: ___ vozi do Grušove in obrne proti Melju 
+ ODHODI IZ POSTAJE Metava ZA SMER Melje 
+07:32 
+ N E D E L J A 
+ODHODI IZ POSTAJE Melje ZA SMER Grušova 
+08:30  12:15 
+ ODHODI IZ POSTAJE Melje ZA SMER Trčova - Griček 
+08:30  12:15 
+ ODHODI IZ POSTAJE Grušova ZA SMER Melje 
+09:15  13:05 
+ ODHODI IZ POSTAJE Trčova - Griček ZA SMER Melje 
+08:59  12:44  
+Opomba: ___ vozi do Grušove in obrne proti Trčova - Griček 
+ LINIJA ŠT.20: Grušova 
+Melje, Kraljeviča Marka ulica, Oreško nabrežje 1, Oreško nabrežje 2, Mlinska AP, TPC City , Glavni trg - Vetrinjska, Magdalena, Pobreška - 
+Europark, Greenwich, Čufarjeva - TVD Partizan, Čufarjeva - dom st. obč., Zrkovci, Zrkovska - Na Gorci 54, Zrkovska - Na Gorci 65, Zrkovska - 
+Na terasi, Zrkovska - trgovina, Zrkovska cesta, Zrkovska - Gasilski dom, Meljski hrib - most, Kovačič, Lorber, Metava, Metava - Duplek, križišče, 
+Novak, Trčova - Griček, Trčova 31, Malečnik - trgovina, Malečnik - odcep Trčova, Celestrina, Nebova I, Nebova II, Ruperče, Kronaveter, Knezar, 
+Metava - odcep, Zimica - odcep, Grušova 1, Grušova 
+POVRATEK 
+Grušova, Grušova 1, Zimica - odcep, Metava - odcep, Knezar, Kronaveter, Ruperče, Nebova II, Nebova I, Celestrina, Malečnik - odcep Trčova, 
+Malečnik - trgovina, Trčova 31, Trčova - Griček, Novak, Metava - Duplek, križišče, Metava, Lorber, Kovačič, Meljski hrib - most, Čufarjeva - dom 
+st. obč., Čufarjeva - TVD Partizan, Greenwich, Pobreška - Europark, Magdalena, Glavni trg - Židovska, TPC City , Meljska - Partizanska, Meljska - 
+trgovina, Melje 
+ Vozni red velja od 03. 09. 2018. 
+----------------Page (0) Break----------------

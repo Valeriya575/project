@@ -1,0 +1,25 @@
+<ion-menu side="left" [content]="content" scrollbar-y-auto>
+  <ion-header>
+
+    <ion-navbar>
+      <ion-title>Menu</ion-title>
+    </ion-navbar>
+  
+</ion-header>
+  
+  
+  <ion-content  style="background-color: #e2e2e2;" scrollbar-y-auto>
+  <ion-list  style="background-color: #e2e2e2;">
+    <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)" [disabled]="show(p)"  style="background-color: #e2e2e2;color:blue;font-weight:bold;">
+      <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+      {{ p.title }}
+    </button>
+    <button ion-item menuClose (click)="logOut()" [disabled]="!isenabled()"  style="background-color: #e2e2e2;color:blue;font-weight:bold;">
+        <ion-icon item-start name="bicycle"></ion-icon>
+        Log Out
+      </button>
+  </ion-list>
+  </ion-content>  
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"  style="background-color: #e2e2e2;"></ion-nav>

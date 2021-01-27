@@ -1,0 +1,19 @@
+.bd-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.map-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+h2 {
+    border-style: solid;
+    padding: 100px;
+}

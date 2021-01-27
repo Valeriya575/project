@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle left>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title><ion-icon name="bus"></ion-icon> Buses</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color: #e2e2e2;">
+    <ion-list style="background-color: #e2e2e2;">
+        <ion-item style="background-color: #e2e2e2;">
+            <ion-label for="searchInput">Search for buses</ion-label>
+            <ion-input type="text" id="searchInput" #searchInput (keyup)="filterBuses(searchInput.value)"></ion-input>
+        </ion-item>
+        <ion-list-header style="background-color: #e2e2e2;">
+          <ion-label>Bus line</ion-label>
+          <ion-label>Bus direction</ion-label>
+          <!--<ion-label>Busess. Please click for details</ion-label>-->
+        </ion-list-header> 
+        <button ion-item *ngFor="let bus of buses" (click)="details(bus)" style="background-color: #e2e2e2;">
+          <ion-label>{{bus.busLine}}</ion-label>
+          <ion-label>{{bus.busDirection}}</ion-label>
+        </button >  
+    </ion-list>
+</ion-content>

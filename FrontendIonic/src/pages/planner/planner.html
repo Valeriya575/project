@@ -1,0 +1,96 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button menuToggle left>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title><ion-icon name="map"></ion-icon> 
+      Planner
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #e2e2e2;">
+  <ion-list style="background-color: #e2e2e2;">
+      <ion-item style="background-color: #e2e2e2;">
+          <ion-label for="selectStation"><ion-icon name="bus"></ion-icon> </ion-label>
+          <ion-select id="selectStation" name="selectStation" [(ngModel)]="selectedStation">
+            <ion-option  *ngFor="let sl of stationList" [value]="sl">{{ sl.stationName }}</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item *ngIf="authProvider.token" style="background-color: #e2e2e2;">
+          <ion-label>
+              Favourite Stations
+          </ion-label>
+          <ion-label *ngFor="let station of user.favouriteStations" (click)="selectStation(station.id)">
+              {{station.name}}
+          </ion-label>
+      </ion-item>
+
+
+      <ion-item style="background-color: #e2e2e2;">
+          <ion-label for="selectBus"><ion-icon name="bus"></ion-icon> </ion-label>
+          <ion-select id="selectBus" name="selectBus" [(ngModel)]="selectedBus">
+            <ion-option *ngFor="let b of busList" [value]="b">{{ b.busDirection }}</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="authProvider.token" style="background-color: #e2e2e2;">
+          <ion-label>
+              Favourite Buses
+          </ion-label>
+          <ion-label *ngFor="let bus of user.favouriteBuses" (click)="selectBus(bus.id)">
+              {{bus.name}}
+          </ion-label>
+      </ion-item>
+
+      <button ion-button color = "default" (click)="getLines()" icon-start full outline>
+          <ion-icon name="search"></ion-icon>
+            Search for bus
+      </button>
+  </ion-list>
+
+  <ion-list *ngIf="lines && lines.length > 0" style="background-color: #e2e2e2;">
+      <ion-item-divider style="background-color: #e2e2e2;">
+          <ion-icon name="color-filter"></ion-icon>
+          Filtering
+      </ion-item-divider>
+      <ion-item style="background-color: #e2e2e2;">
+          <ion-label for="dayType">Day Type</ion-label>
+          <ion-select id="dayType" name="selectDayType" [(ngModel)]="selectedDayType">
+              <ion-option *ngFor="let dt of dayTypeList" [value]="dt">{{ dt }}</ion-option>
+          </ion-select>
+      </ion-item>
+
+      <ion-item style="background-color: #e2e2e2;">
+          <ion-label>Pick up the date</ion-label>
+          <ion-datetime displayFormat="DD MMM, HH:mm" [(ngModel)]="selectedDate"></ion-datetime>
+      </ion-item>
+
+      <button ion-button color = "default" (click)="filterResults()" full outline> Filter </button>
+  </ion-list>
+
+  <ion-list *ngIf="lines && lines.length > 0" style="background-color: #e2e2e2;">
+    <ion-list-header style="background-color: #e2e2e2;">
+      <ion-icon name="arrow-down"></ion-icon>
+      <ion-label>Bus direction</ion-label>
+      <ion-label>Station name</ion-label>
+      <ion-label>Arrival times</ion-label>
+      <ion-label>Day type</ion-label>
+    </ion-list-header> 
+
+    <ion-item *ngFor="let line of lines" style="background-color: #e2e2e2;">
+        <ion-label (click)="gotoBusDetails(line.bus.id)">{{ line.bus.busDirection }}</ion-label>
+        <ion-label (click)="gotoStationDetails(line.station.id)">{{ line.station.stationName }}</ion-label>
+        <ion-label (click)="showArrivalTimes(line)">Show arrival times</ion-label>
+        <ion-label>{{ line.dayType }}</ion-label>
+    </ion-item>  
+  </ion-list>
+
+  <ion-label *ngIf="lines && lines.length === 0" style="background-color: #e2e2e2;">
+      Sorry, no matches!
+  </ion-label>
+
+</ion-content>

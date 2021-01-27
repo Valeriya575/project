@@ -1,0 +1,42 @@
+{
+  "name": "buslinesbackend",
+  "version": "1.0.0",
+  "description": "Backend for the BusLines app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovros/RUPS.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=production  & node ./bin/www",
+    "watch": "NODE_ENV=development nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development node ./bin/www",
+    "lpp": "pip install -r requirements.txt && ./bin/lpp.py -d -p",
+    "marprom": "node ./bin/marprom"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "js-yaml": "^3.12.0",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.6",
+    "morgan": "^1.9.1",
+    "pdf2json": "^1.1.7",
+    "request": "^2.88.0",
+    "spdy": "^3.4.7",
+    "swagger-ui-express": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

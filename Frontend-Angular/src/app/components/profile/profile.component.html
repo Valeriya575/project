@@ -1,0 +1,60 @@
+<div class="profile-content">
+  <h1 class="display-4" *ngIf="user.username">
+    {{user.username}}
+  </h1>
+  <div class="form-frame">
+    <h3>Change E-Mail & Password</h3>
+    <div class="form-group">
+      <label for="email">New E-Mail Address</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="user.email">
+    </div>
+    <div class="form-group">
+      <label for="password">New Password</label>
+      <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" [(ngModel)]="user.password">
+      <small id="passwordHelp" class="form-text text-muted">Minimal password length is 8 chars.</small>
+    </div>
+    <h3>Favourite Stations</h3>
+    <div class="form-group">
+      <label for="selectStation">Add favourite station</label>
+      <select class="form-control" id="selectStation" name="selectStation" [(ngModel)]="selectedStation">
+        <option *ngFor="let sl of stationList" [ngValue]="sl">{{sl.stationName}}</option>
+      </select>
+    </div>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">Station name</th>
+          <th scope="col" class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let station of user.favouriteStations">
+          <td>{{station.name}}</td>
+          <td class="text-right"><button type="button" class="btn btn-danger btn-sm" (click)="deleteStation(station.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Favourite Buses</h3>
+    <div class="form-group">
+      <label for="selectBus">Add favourite bus</label>
+      <select class="form-control" id="selectBus" name="selectBus" [(ngModel)]="selectedBus">
+        <option *ngFor="let b of busList" [ngValue]="b">{{b.busDirection}}</option>
+      </select>
+    </div>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">Bus name</th>
+          <th scope="col" class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bus of user.favouriteBuses">
+          <td>{{bus.name}}</td>
+          <td class="text-right"><button type="button" class="btn btn-danger btn-sm" (click)="deleteBus(bus.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="saveChanges()" class="btn btn-success">Submit Changes</button>
+  </div>
+</div>

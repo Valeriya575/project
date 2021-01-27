@@ -1,0 +1,57 @@
+ 
+LINIJA 7 
+Kamnica  
+059 180 482 
+www.marprom.si 
+ 
+D E L A V N I K 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Kamnica - pošta 
+10:00  13:35  18:10  21:00  21:45 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Rošpoh 
+04:50  05:20  05:45  06:10  06:40  07:05  07:35  07:55  09:00  11:00  12:00  12:30  13:05  14:05  14:30  15:05  
+15:30  16:10  17:10  19:10  20:10  22:25 
+ OPOMBA: OB  05:40 URI ODHOD IZ Melje DO Maribor AP 
+ ODHODI IZ POSTAJE Rošpoh ZA SMER Maribor AP 
+04:55  05:40  06:10  06:35  07:00  07:25  08:00  08:25  09:25  11:25  12:25  12:55  13:30  14:30  14:55  15:30  
+15:55  16:30  17:30  19:30  20:30 
+ OPOMBA: OB  05:10 URI ODHOD IZ Rošpoh DO Melje 
+ ODHODI IZ POSTAJE Kamnica - pošta ZA SMER Maribor AP 
+05:01  05:47  06:17  06:42  07:07  07:32  08:07  08:32  09:32  10:30  11:32  12:32  13:02  13:37  14:05  14:37  
+15:02  15:37  16:02  16:37  17:37  18:30  19:37  20:37  21:20  22:05 
+ S O B O T A 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Kamnica - pošta 
+08:10  10:10  18:10  21:10 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Rošpoh 
+05:00  06:10  07:10  09:10  11:10  12:10  13:10  14:10  15:10  16:10  17:10  19:10  20:10  22:10 
+ ODHODI IZ POSTAJE Rošpoh ZA SMER Maribor AP 
+05:20  06:30  07:30  09:30  11:30  12:30  13:30  14:30  15:30  16:30  17:30  19:30  20:30  22:30 
+ ODHODI IZ POSTAJE Kamnica - pošta ZA SMER Maribor AP 
+05:27  06:37  07:37  08:30  09:37  10:30  11:37  12:37  13:37  14:37  15:37  16:37  17:37  18:30  19:37  20:37  
+21:30  22:37 
+ N E D E L J A 
+ODHODI IZ POSTAJE Maribor AP ZA SMER Kamnica - pošta 
+07:10  08:10  10:10  12:10  15:10  17:10  19:10  21:10 
+ ODHODI IZ POSTAJE Maribor AP ZA SMER Rošpoh 
+06:10  09:10  11:10  13:10  14:10  16:10  18:10  20:20  22:10 
+ ODHODI IZ POSTAJE Rošpoh ZA SMER Maribor AP 
+06:30  09:30  11:30  13:30  14:30  16:30  18:30  20:40  22:30 
+ ODHODI IZ POSTAJE Kamnica - pošta ZA SMER Maribor AP 
+06:37  07:30  08:30  09:37  10:30  11:37  12:30  13:37  14:37  15:30  16:37  17:30  18:37  19:30  20:47  21:30  
+22:37 
+ 
+Legenda : 
+  Vozila prilagojena potrebam gibalno oviranih oseb.  
+ Adapting vehicles for people with disabilities. 
+ 
+LINIJA ŠT.7: Kamnica 
+Melje, Meljska - trgovina, Meljska - Partizanska, Maribor AP, Krekova - občina, Krekova, Stadion Ljudski vrt, Vrbanska - šola, 
+Vrbanska - vodovod, Kamnica - hipodrom, Kamnica - šola, Kamnica - pošta, Kamnica - trgovina, Cesta v Rošpoh 65, Cesta v 
+Rošpoh 115, Rošpoh - odcep Urban, Rošpoh - Hojnik, Rošpoh 
+POVRATEK 
+Rošpoh, Rošpoh - Hojnik, Rošpoh - odcep Urban, Cesta v Rošpoh 115, Cesta v Rošpoh 65, Kamnica - trgovina, Kamnica - pošta, 
+Kamnica - šola, Kamnica - hipodrom, Vrbanska - vodovod, Vrbanska - šola, Gosposvetska - Turnerjeva, Gosposvetska - 
+Vrbanska, Gosposvetska - STŠ, Strossmayerjeva, Koroška - Poštna, Glavni trg - Židovska, TPC City , Maribor AP, Meljska - 
+Partizanska, Meljska - trgovina, Melje 
+ 
+Vozni red velja od 03. 09. 2018. 
+----------------Page (0) Break----------------

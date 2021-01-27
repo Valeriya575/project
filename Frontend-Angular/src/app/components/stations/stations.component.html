@@ -1,0 +1,20 @@
+<div class="stations-content">
+  <h2>Stations list</h2>
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Station name</th>
+        <th scope="col">Coordinates</th>
+        <th scope="col">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let station of stations">
+        <td>{{station.stationName}}</td>
+        <td>{{station.location.lon}} / {{station.location.lat}}</td>
+        <td><button (click)="redirectToDetails(station.id)" type="button" class="btn btn-primary btn-sm">Details</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="map" class="map"></div>
+</div>

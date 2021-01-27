@@ -1,0 +1,26 @@
+<div class="bus-content">
+  <h2>Buses</h2>
+    <div class="form-group">
+      <label for="searchInput">Search for buses</label>
+      <input class="form-control" id="searchInput" #searchInput (keyup)="filterBuses(searchInput.value)">
+    </div>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">Bus line</th>
+          <th scope="col">Bus direction</th>
+          <th scope="col">Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bus of buses">
+          <td>{{bus.busLine}}</td>
+          <td>{{bus.busDirection}}</td>
+          <td><button (click)="redirectToDetails(bus.id)" type="button" class="btn btn-primary btn-sm">Details</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>
+        Map goes here!
+    </h1>
+</div>

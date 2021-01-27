@@ -1,0 +1,20 @@
+<div class="login-content">
+  <h3 class="login-title">Log in</h3>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-frame">
+    <div class="form-group">
+      <label for="emailInput">Username</label>
+      <input type="text" class="form-control" id="emailInput" formControlName="email" required>
+    </div>
+    <div class="form-group">
+      <label for="passwordInput">Password</label>
+      <input type="password" class="form-control" id="passwordInput" formControlName="password" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Log In</button>
+  </form>
+  <div class="form-frame">Don't have account yet?
+    <a routerLink="/register" routerLinkActive="active">Create account!</a>
+  </div>
+  <div *ngIf="wrongCombination" class="alert alert-danger" role="alert">
+    Wrong username or password!
+  </div>
+</div>
